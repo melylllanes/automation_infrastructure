@@ -7,7 +7,7 @@
   service:
     name: nginx
     state: started
-- name: move index.html to html direcotry
+- name: move index.html file
   copy:
     src: ../../automation_infrastructure/index.html
     dest: /var/www/html
