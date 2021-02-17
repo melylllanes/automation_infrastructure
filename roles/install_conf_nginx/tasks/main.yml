@@ -1,0 +1,14 @@
+---
+- name: install lastest version of nginx
+  apt: 
+    name: nginx 
+    state: latest
+- name: start nginx
+  service:
+    name: nginx
+    state: started
+- name: move index.html to html direcotry
+  copy:
+    src: ../../automation_infrastructure/index.html
+    dest: /var/www/html
+

@@ -1,4 +1,4 @@
 ---
  - hosts: localhost
    roles:
-     - role: install_nginx
+     - role: install_conf_nginx
